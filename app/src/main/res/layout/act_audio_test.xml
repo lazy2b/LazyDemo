@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignRight="@+id/button5"
+        android:layout_below="@+id/button1"
+        android:onClick="play"
+        android:text="播放" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_toLeftOf="@+id/button7"
+        android:onClick="stopPlay"
+        android:text="停止播放" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button2"
+        android:onClick="upload"
+        android:text="上传" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView"
+        android:layout_toLeftOf="@+id/button6"
+        android:onClick="start"
+        android:text="录音" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button5"
+        android:layout_alignBottom="@+id/button5"
+        android:layout_toRightOf="@+id/button5"
+        android:onClick="download"
+        android:text="下载录音" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button6"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/button3"
+        android:layout_toRightOf="@+id/button6"
+        android:background="@drawable/btn_record_selector"
+        android:longClickable="true"
+        android:text="长按录音并上传\n\n[注:按钮变为绿色开始讲话]"
+        android:textColor="@color/deep_grey"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button4"
+        android:layout_alignRight="@+id/button6"
+        android:layout_toRightOf="@+id/button1"
+        android:onClick="stop"
+        android:text="停止录音" />
+
+    <ListView
+        android:id="@+id/lv_act_recorder"
+        style="@style/LayoutFFStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/button7" >
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#cccccc" />
+
+    <RadioGroup
+        android:id="@+id/rg_menu"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#1E1E1E"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbtn_one"
+            style="@style/ConditionRbStyle"
+            android:drawableTop="@drawable/history_selector"
+            android:text="历史" />
+
+        <RadioButton
+            android:id="@+id/rbtn_two"
+            style="@style/ConditionRbStyle"
+            android:drawableTop="@drawable/free_recom_selector"
+            android:text="免费推荐" />
+
+        <RadioButton
+            android:id="@+id/rbtn_three"
+            style="@style/ConditionRbStyle"
+            android:drawableTop="@drawable/luzhu_analyze_selector"
+            android:text="路珠" />
+
+        <RadioButton
+            android:id="@+id/rbtn_four"
+            style="@style/ConditionRbStyle"
+            android:drawableTop="@drawable/omit_statiscs_selector"
+            android:text="遗漏" />
+
+        <RadioButton
+            android:id="@+id/rbtn_more"
+            style="@style/ConditionRbStyle"
+            android:drawableTop="@drawable/all_choose_selector"
+            android:text="全部" />
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="brick_red">#ee451c</color>
+    <color name="green">#3ec979</color>
+    <color name="black">#333333</color>
+    <color name="dark_grey">#666666</color>
+    <color name="med_grey">#666666</color>
+    <color name="silver_grey">#b3b3b3</color>
+    <color name="doe">#cccccc</color>
+    <color name="light_grey">#f7f7f7</color>
+    <color name="silver_white">#fcfcfc</color>
+    <color name="orange">#f06700</color>
+    <color name="deep_grey">#4d4d4d</color>
+    <color name="blue">#0683f8</color>
+    <color name="yellow">#efae00</color>
+    <color name="deep_blue">#4b05f9</color>
+    <color name="red">#f01311</color>
+    <color name="light_blue">#00b9cf</color>
+    <color name="sky_grey">#a8a8a8</color>
+    <color name="tea_green">#22b103</color>
+    <color name="dark_red">#bf0b01</color>
+    <color name="grey_green">#6f8a97</color>
+    <color name="khaki">#a76a2a</color>
+    <color name="purple">#4c2099</color>
+    <color name="zephyr">#ebe8e8</color>
+    <color name="white">#ffffff</color>
+    <color name="lucency">#00ffffff</color>
+    <color name="grey_80">#80808080</color>
+    <color name="down">#3EC979</color>
+    <color name="update">#F06700</color>
+    <color name="open">#0683F8</color>
+    <color name="transparent">#00000000</color>
+    <color name="half_transparent">#50000000</color>
+    <color name="shade">#f1f1f1</color>
+    <color name="holo_green_light">#ff99cc00</color>
+
+</resources>
