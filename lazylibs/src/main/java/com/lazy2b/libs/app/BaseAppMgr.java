@@ -7,7 +7,12 @@
  */
 package com.lazy2b.libs.app;
 
-import java.io.File;
+import android.R;
+import android.app.Application;
+import android.content.Context;
+import android.content.res.Resources;
+import android.text.TextUtils;
+import android.widget.Toast;
 
 import com.lazy2b.libs.app.Http.HttpConfig;
 import com.lazy2b.libs.constants.AppData;
@@ -19,11 +24,7 @@ import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.utils.StorageUtils;
 
-import android.R;
-import android.app.Application;
-import android.content.Context;
-import android.content.res.Resources;
-import android.text.TextUtils;
+import java.io.File;
 
 /**
  * 类名: AppMgr <br/>
@@ -80,6 +81,10 @@ public class BaseAppMgr extends Application implements ILazyBase {
 
 	protected HttpConfig getHttpCfg() {
 		return null;
+	}
+
+	public static void t(String txt){
+		Toast.makeText(cxt, txt, Toast.LENGTH_SHORT).show();
 	}
 
 	@SuppressWarnings("deprecation")

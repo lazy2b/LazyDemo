@@ -99,6 +99,9 @@ public class MainActivity extends BaseActivity implements ILazyBase {
 
 			init();
 
+
+//			asdfsadfasdfsadfsadfsdf
+
 		} else {
 
 		}
